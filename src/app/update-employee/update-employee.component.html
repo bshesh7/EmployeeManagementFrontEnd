@@ -1,0 +1,45 @@
+<div class="container col-md-6" style="text-align: center">
+    
+    <h2>Add Employees</h2>
+    
+    <form class="container" (ngSubmit)="updateEmployeeData()">
+
+        <div class="mb-3 row">
+            <label for="inputPassword" class="col-sm-2 col-form-label">Employee ID</label>
+            <div class="col-sm-10">
+              <input type="input" class="form-control" id="eId" name="eId" [(ngModel)]="employee.eId" >
+            </div>
+        </div>
+
+        <div class="mb-3 row">
+            <label for="inputPassword" class="col-sm-2 col-form-label">First Name</label>
+            <div class="col-sm-10">
+              <input type="input" class="form-control" id="eFname" name="eFname" [(ngModel)]="employee.eFname">
+            </div>
+        </div>
+
+        <div class="mb-3 row">
+            <label for="inputPassword" class="col-sm-2 col-form-label">Last Name</label>
+            <div class="col-sm-10">
+              <input type="input" class="form-control" id="eLname"  name="eLname" [(ngModel)]="employee.eLname">
+            </div>
+        </div>
+
+        <div class="mb-3 row">
+            <label for="inputPassword" class="col-sm-2 col-form-label">DOB</label>
+            <div class="col-sm-10">
+              <input type="input" class="form-control" id="dob" name="dob" [(ngModel)]="employee.dob">
+            </div>
+        </div>
+
+        <div class="mb-3 row">
+            <label for="inputPassword" class="col-sm-2 col-form-label">Last 4 SSN only</label>
+            <div class="col-sm-10">
+              <input type="input" class="form-control" id="ssn" name="ssn" [(ngModel)]="employee.ssn">
+            </div>
+        </div>
+    
+        <button class="btn btn-primary" type="submit"> Update Employee</button>
+    
+    </form>
+</div>
